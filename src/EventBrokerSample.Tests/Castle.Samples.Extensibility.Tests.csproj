@@ -8,8 +8,8 @@
     <ProjectGuid>{0F5DF97F-3E5A-4D26-88B7-1F7545BAE1DE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventBrokerSample.Tests</RootNamespace>
-    <AssemblyName>EventBrokerSample.Tests</AssemblyName>
+    <RootNamespace>Castle.Samples.Extensibility.Tests</RootNamespace>
+    <AssemblyName>Castle.Samples.Extensibility.Tests</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -90,9 +90,9 @@
     <Compile Include="Services\EventRegisterSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EventBrokerSample.UI\EventBrokerSample.UI.csproj">
+    <ProjectReference Include="..\EventBrokerSample.UI\Castle.Samples.Extensibility.csproj">
       <Project>{1F12E8FB-FB17-4DB3-8E20-962DF70D67CD}</Project>
-      <Name>EventBrokerSample.UI</Name>
+      <Name>Castle.Samples.Extensibility</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

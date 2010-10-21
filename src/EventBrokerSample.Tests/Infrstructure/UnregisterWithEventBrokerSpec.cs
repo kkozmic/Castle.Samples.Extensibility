@@ -12,12 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.Tests.Infrstructure
+namespace Castle.Samples.Extensibility.Tests.Infrstructure
 {
 	using Castle.Core;
-
-	using EventBrokerSample.UI.Facility;
-	using EventBrokerSample.UI.Services;
+	using Castle.Samples.Extensibility.Facility;
+	using Castle.Samples.Extensibility.Services;
 
 	using Moq;
 

@@ -8,8 +8,8 @@
     <ProjectGuid>{1F12E8FB-FB17-4DB3-8E20-962DF70D67CD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventBrokerSample.UI</RootNamespace>
-    <AssemblyName>EventBrokerSample.UI</AssemblyName>
+    <RootNamespace>Castle.Samples.Extensibility</RootNamespace>
+    <AssemblyName>Castle.Samples.Extensibility</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

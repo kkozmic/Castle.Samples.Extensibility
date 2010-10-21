@@ -12,15 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI
+namespace Castle.Samples.Extensibility
 {
 	using System.Windows.Forms;
 
+	using Castle.Samples.Extensibility.Facility;
+	using Castle.Samples.Extensibility.Installers;
+	using Castle.Samples.Extensibility.UI;
 	using Castle.Windsor;
-
-	using EventBrokerSample.UI.Facility;
-	using EventBrokerSample.UI.Installers;
-	using EventBrokerSample.UI.UI;
 
 	internal class WindsorContext : ApplicationContext
 	{

@@ -12,14 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.Facility
+namespace Castle.Samples.Extensibility.Facility
 {
 	using System;
 	using System.Linq;
 
 	using Castle.Core;
-
-	using EventBrokerSample.UI.Services;
+	using Castle.Samples.Extensibility.Services;
 
 	public static class ComponentModelExtensions
 	{

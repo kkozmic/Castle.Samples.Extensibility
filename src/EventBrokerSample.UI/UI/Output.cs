@@ -12,11 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.UI
+namespace Castle.Samples.Extensibility.UI
 {
 	using System.Windows.Forms;
 
-	using EventBrokerSample.UI.Services;
+	using Castle.Samples.Extensibility.Services;
 
 	public partial class Output : UserControl, IListener<DateTimeMessage>
 	{

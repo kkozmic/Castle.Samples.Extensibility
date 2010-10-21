@@ -12,13 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.Facility
+namespace Castle.Samples.Extensibility.Facility
 {
 	using Castle.Core;
 	using Castle.MicroKernel;
 	using Castle.MicroKernel.ModelBuilder;
-
-	using EventBrokerSample.UI.Services;
+	using Castle.Samples.Extensibility.Services;
 
 	public class EventBrokerContributor : IContributeComponentModelConstruction
 	{

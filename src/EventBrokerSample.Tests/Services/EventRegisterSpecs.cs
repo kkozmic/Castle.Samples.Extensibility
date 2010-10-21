@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.Tests.Services
+namespace Castle.Samples.Extensibility.Tests.Services
 {
 	using System.Collections.Generic;
 	using System.Threading;
 
-	using EventBrokerSample.UI.Services;
+	using Castle.Samples.Extensibility.Services;
 
 	using Moq;
 

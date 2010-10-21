@@ -1,4 +1,4 @@
-﻿namespace EventBrokerSample.UI.UI
+﻿namespace Castle.Samples.Extensibility.UI
 {
     partial class ApplicationShell
     {
