@@ -12,19 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.Installers
+namespace EventBrokerSample.UI.Facility
 {
-	using Castle.MicroKernel.Registration;
-	using Castle.MicroKernel.SubSystems.Configuration;
-	using Castle.Windsor;
+	using Castle.Core;
 
-	using EventBrokerSample.UI.Infrastructure;
+	using EventBrokerSample.UI.Services;
 
-	public class EventBrokerInstaller : IWindsorInstaller
+	public class UnregisterWithEventBroker : IDecommissionConcern
 	{
-		public void Install(IWindsorContainer container, IConfigurationStore store)
+		private readonly IEventRegister broker;
+
+		public UnregisterWithEventBroker(IEventRegister broker)
 		{
-			container.AddFacility<EventBrokerFacility>();
+			this.broker = broker;
+		}
+
+		public void Apply(ComponentModel model, object component)
+		{
+			broker.Unregister(component);
 		}
 	}
 }

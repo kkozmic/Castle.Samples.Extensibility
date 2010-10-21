@@ -12,27 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.Infrastructure
+namespace EventBrokerSample.UI.Facility
 {
-	using System;
-	using System.Linq;
-
 	using Castle.Core;
 
 	using EventBrokerSample.UI.Services;
 
-	public static class ComponentModelExtensions
+	public class RegisterWithEventBroker : ICommissionConcern
 	{
-		private static readonly Type LISTENER = typeof(IListener<>);
+		private readonly IEventRegister broker;
 
-		public static bool ImplementationIsAListener(this ComponentModel model)
+		public RegisterWithEventBroker(IEventRegister broker)
 		{
-			return model
-				.Implementation
-				.GetInterfaces()
-				.Where(i => i.IsGenericType)
-				.Select(i => i.GetGenericTypeDefinition())
-				.Any(i => i == LISTENER);
+			this.broker = broker;
+		}
+
+		public void Apply(ComponentModel model, object component)
+		{
+			broker.Register(component);
 		}
 	}
 }

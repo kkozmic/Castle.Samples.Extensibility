@@ -12,24 +12,26 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace EventBrokerSample.UI.Infrastructure
+namespace EventBrokerSample.UI.Facility
 {
 	using Castle.Core;
+	using Castle.MicroKernel;
+	using Castle.MicroKernel.ModelBuilder;
 
 	using EventBrokerSample.UI.Services;
 
-	public class UnregisterWithEventBroker : IDecommissionConcern
+	public class EventBrokerContributor : IContributeComponentModelConstruction
 	{
-		private readonly IEventRegister broker;
-
-		public UnregisterWithEventBroker(IEventRegister broker)
+		public void ProcessModel(IKernel kernel, ComponentModel model)
 		{
-			this.broker = broker;
-		}
+			if (model.ImplementationIsAListener() == false)
+			{
+				return;
+			}
 
-		public void Apply(ComponentModel model, object component)
-		{
-			broker.Unregister(component);
+			var broker = kernel.Resolve<IEventRegister>();
+			model.Lifecycle.Add(new RegisterWithEventBroker(broker));
+			model.Lifecycle.Add(new UnregisterWithEventBroker(broker));
 		}
 	}
 }

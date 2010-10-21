@@ -78,13 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnumerableExtensions.cs" />
-    <Compile Include="Infrastructure\ComponentModelExtensions.cs" />
-    <Compile Include="Infrastructure\EventBrokerContributor.cs" />
-    <Compile Include="Infrastructure\EventBrokerFacility.cs" />
-    <Compile Include="Installers\EventBrokerInstaller.cs" />
+    <Compile Include="Facility\ComponentModelExtensions.cs" />
+    <Compile Include="Facility\EventBrokerContributor.cs" />
+    <Compile Include="Facility\EventBrokerFacility.cs" />
     <Compile Include="Installers\FormsInstaller.cs" />
-    <Compile Include="Infrastructure\RegisterWithEventBroker.cs" />
-    <Compile Include="Infrastructure\UnregisterWithEventBroker.cs" />
+    <Compile Include="Facility\RegisterWithEventBroker.cs" />
+    <Compile Include="Facility\UnregisterWithEventBroker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

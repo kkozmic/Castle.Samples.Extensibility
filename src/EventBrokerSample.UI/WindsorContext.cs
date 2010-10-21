@@ -18,6 +18,7 @@ namespace EventBrokerSample.UI
 
 	using Castle.Windsor;
 
+	using EventBrokerSample.UI.Facility;
 	using EventBrokerSample.UI.Installers;
 	using EventBrokerSample.UI.UI;
 
@@ -27,7 +28,9 @@ namespace EventBrokerSample.UI
 
 		public WindsorContext()
 		{
-			container = new WindsorContainer().Install(new EventBrokerInstaller(), new FormsInstaller());
+			container = new WindsorContainer()
+				.AddFacility<EventBrokerFacility>()
+				.Install(new FormsInstaller());
 			MainForm = container.Resolve<ApplicationShell>();
 		}
 

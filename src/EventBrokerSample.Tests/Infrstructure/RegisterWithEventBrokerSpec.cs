@@ -16,7 +16,7 @@ namespace EventBrokerSample.Tests.Infrstructure
 {
 	using Castle.Core;
 
-	using EventBrokerSample.UI.Infrastructure;
+	using EventBrokerSample.UI.Facility;
 	using EventBrokerSample.UI.Services;
 
 	using Moq;

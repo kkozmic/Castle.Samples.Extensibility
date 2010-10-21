@@ -20,7 +20,7 @@ namespace EventBrokerSample.Tests.Infrstructure
 	using Castle.MicroKernel.Registration;
 	using Castle.Windsor;
 
-	using EventBrokerSample.UI.Infrastructure;
+	using EventBrokerSample.UI.Facility;
 	using EventBrokerSample.UI.Services;
 
 	using Moq;
