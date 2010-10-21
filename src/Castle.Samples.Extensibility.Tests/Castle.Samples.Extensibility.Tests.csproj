@@ -90,7 +90,7 @@
     <Compile Include="Services\EventRegisterSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EventBrokerSample.UI\Castle.Samples.Extensibility.csproj">
+    <ProjectReference Include="..\Castle.Samples.Extensibility\Castle.Samples.Extensibility.csproj">
       <Project>{1F12E8FB-FB17-4DB3-8E20-962DF70D67CD}</Project>
       <Name>Castle.Samples.Extensibility</Name>
     </ProjectReference>
