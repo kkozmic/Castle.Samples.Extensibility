@@ -1,14 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBrokerSample.UI", "src\EventBrokerSample.UI\EventBrokerSample.UI.csproj", "{1F12E8FB-FB17-4DB3-8E20-962DF70D67CD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBrokerSample.Tests", "src\EventBrokerSample.Tests\EventBrokerSample.Tests.csproj", "{0F5DF97F-3E5A-4D26-88B7-1F7545BAE1DE}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "license", "license", "{F42808F1-733D-4C18-A3AE-BAD291ECCDF8}"
 	ProjectSection(SolutionItems) = preProject
 		license.txt = license.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBrokerSample.UI", "src\EventBrokerSample.UI\EventBrokerSample.UI.csproj", "{1F12E8FB-FB17-4DB3-8E20-962DF70D67CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBrokerSample.Tests", "src\EventBrokerSample.Tests\EventBrokerSample.Tests.csproj", "{0F5DF97F-3E5A-4D26-88B7-1F7545BAE1DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
